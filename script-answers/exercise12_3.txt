@@ -1,0 +1,3 @@
+Script started on 2024-01-05 11:02:05+02:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="211" LINES="57"]
+docker start -i nervous_shockleyapt updateapt install nano -ynano cd /usr/sr	a	nano in	console.log('Hello World')yexitexit
+Script done on 2024-01-05 11:04:00+02:00 [COMMAND_EXIT_CODE="0"]

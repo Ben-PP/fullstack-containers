@@ -1,0 +1,3 @@
+Script started on 2024-01-05 13:15:05+02:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="140" LINES="75"]
+doc[A[A[A[A[A[A[D[D[D[C[C[D[D[D[D[D[Dredisredis-cli KEYSI *[ASET added_todos 9001redis-cli DEL added_todosexitexit
+Script done on 2024-01-05 13:18:46+02:00 [COMMAND_EXIT_CODE="0"]

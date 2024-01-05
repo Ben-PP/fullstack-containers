@@ -1,0 +1,3 @@
+Script started on 2024-01-05 10:52:23+02:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="140" LINES="77"]
+docker container run hello-world[200~docker run -it ubuntu bash[201~[Cmkdir --helpmkdir -p /usr/src/apptouch /usr/src/app/index.jsexitexit
+Script done on 2024-01-05 10:54:45+02:00 [COMMAND_EXIT_CODE="0"]
