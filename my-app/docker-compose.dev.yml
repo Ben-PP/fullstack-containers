@@ -1,0 +1,36 @@
+services:
+  # Backend
+  server:
+    image: blog-backend-dev
+    build:
+      context: ./backend
+      dockerfile: Dockerfile.dev
+    container_name: blog-backend-dev
+    volumes:
+      - ./backend:/usr/src/app
+
+  # Frontend
+  app:
+    image: blog-frontend-dev
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile.dev
+    container_name: blog-frontend-dev
+
+    volumes:
+      - ./frontend:/usr/src/app
+    environment:
+      REACT_APP_BACKEND_URL: http://localhost/api
+    depends_on:
+      - server # wait for the backend container to be started
+
+  # Nginx reverse proxy
+  nginx:
+    image: nginx:1.20.1
+    volumes:
+      - ./nginx.dev.conf:/etc/nginx/nginx.conf:ro
+    ports:
+      - 80:80
+    container_name: reverse-proxy
+    depends_on:
+      - app # wait for the frontend container to be started
